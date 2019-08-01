@@ -6,7 +6,7 @@ layui.use(['layer', 'util'], function () {
         $("#loading").fadeOut(500);
         new WOW().init();
     })
-    util.fixbar();;
+    util.fixbar();	// back to top
     $('.next').click(function () {
         $('html,body').animate({
             scrollTop: $('#section1').outerHeight() + 1
@@ -28,7 +28,7 @@ layui.use(['layer', 'util'], function () {
     });
 	var ran = function(){return Math.floor(Math.random()*(6-0)+0);}
 	$(document).ready(function(){
-	  $("button").click(function(){
+	  $("#cbgp").click(function(){
 		  $("#section1").css("background-image","url(https://bing.biturl.top/?resolution=1920&format=image&index="+ran()+"&mkt=zh-CN)");
 	  });
 	});
@@ -37,6 +37,7 @@ layui.use(['layer', 'util'], function () {
 	});
 	
 });
+
 //countout
 layui.use('util', function(){
   var util = layui.util;

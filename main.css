@@ -286,6 +286,24 @@ canvas {
 .page1 h1{
 	margin: 20px 0;
 }
+.page1 h2{
+	letter-spacing: 6px;
+}
+.page1 .heart{
+	font-size: 100px;
+    color: #f04c83;
+	margin: 20px 0 0 0;
+}
+#timeout div {
+    padding: 20px;
+    font-size: 30px;
+    display: inline-block;
+}
+#timeout span {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+	}
 .page1 .next {
     display: block;
     width: 50px;
@@ -318,7 +336,7 @@ canvas {
     height: 100vh;
     padding: 0;
     background-color: transparent;
-    background-image: url(https://i.loli.net/2019/07/29/5d3eb099c976570351.jpg);
+    background-image: url(./images/s1_bg.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;

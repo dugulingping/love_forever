@@ -52,7 +52,7 @@ layui.use('util', function(){
 //计时器
 var oldtime = '2019-06-06 00:00:00'
 timer(oldtime);
-setInterval(function(){timer(oldtime);}, 1000);
+var ss = setInterval(function(){timer(oldtime);}, 1000);
 function timer(oldtime) {
 	var time_dis = function (direct_time) {
 		var now = Date.parse(new Date());//当前时间的时间戳
@@ -68,10 +68,13 @@ function timer(oldtime) {
 		this.minutes=Math.floor(leave2/(60*1000));
 		//计算相差秒数
 		var leave3=leave2%(60*1000);//计算分钟数后剩余的毫秒数
-		this.second = leave3/1000;
-		return this.days+"/"+this.hours+"/"+this.minutes+"/"+this.second;
+		this.seconds = leave3/1000;
+		return this.days+"/"+this.hours+"/"+this.minutes+"/"+this.seconds;
 	}
-	var timec = new time_dis(oldtime);
-	var x = document.getElementById("asd");
-	x.innerHTML=timec.days+" 天 "+timec.hours+" 时 "+timec.minutes+" 分 "+timec.second+" 秒";
+	var timespan = new time_dis(oldtime);
+	var x = document.getElementById("timeout");
+	//=timec.days+" 天 "+timec.hours+" 时 "+timec.minutes+" 分 "+timec.second+" 秒";
+  x.innerHTML="<div><span>Days</span>"  + timespan.days + "</div>" + "<div><span>Hours</span>" + timespan.hours + "</div>" + "<div><span>Minutes</span>" + timespan.minutes + "</div>" + "<div><span>Seconds</span>" + timespan.seconds + "</div>";
+
 }
+// "<div><span>Years</span>" + timespan.years + "</div>" + "<div><span>Months</span>" + timespan.months + "</div>" + 

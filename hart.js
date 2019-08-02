@@ -240,8 +240,10 @@ layui.use(['layer', 'util'], function () {
 		$("#loader-wrapper #pinkboard").fadeToggle(6000);
 		$("#index_animated1").addClass('animated zoomIn');
 		$("#next").addClass('animated flash infinite');
-	},"1000");
-
+	},"1000");/*
+	setTimeout(function(){
+		//$("head").append('<meta name="viewport" content="width=device-width initial-scale=1.0" />');
+	},"4000");*/
 	//禁止右键菜单
 	$(document).contextmenu(function (e) {
 		e.preventDefault();

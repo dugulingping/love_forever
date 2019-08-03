@@ -238,12 +238,14 @@ layui.use(['layer', 'util'], function () {
 		$("#loader-wrapper .background").fadeToggle(3000);
 		$("#loader-wrapper .load_title").fadeToggle(1000);
 		$("#loader-wrapper #pinkboard").fadeToggle(6000);
+	},"1000");
+	setTimeout(function(){
+		///$("head").append('<meta name="viewport" content="width=device-width initial-scale=1.0" />');
+		
 		$("#index_animated1").addClass('animated zoomIn');
 		$("#next").addClass('animated flash infinite');
-	},"1000");/*
-	setTimeout(function(){
-		//$("head").append('<meta name="viewport" content="width=device-width initial-scale=1.0" />');
-	},"4000");*/
+		$("#menu").addClass('animated bounceInLeft');
+	},"1300");
 	//禁止右键菜单
 	$(document).contextmenu(function (e) {
 		e.preventDefault();

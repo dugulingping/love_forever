@@ -1,3 +1,5 @@
+var wow = new WOW({animateClass: 'animated',});
+wow.init();
 layui.use(['layer', 'util'], function () {
     var $ = layui.$,
     	layer = layui.layer,
@@ -6,7 +8,6 @@ layui.use(['layer', 'util'], function () {
         $("#loading").fadeOut(500);
         new WOW().init();
     })
-    util.fixbar();	// back to top
     $('.next').click(function () {
         $('html,body').animate({
             scrollTop: $('#section1').outerHeight() + 1
@@ -26,6 +27,13 @@ layui.use(['layer', 'util'], function () {
             $(this).attr({ 'data-mark': "false" });
         }
     });
+	$(window).scroll(function() {
+		if ($(window).scrollTop() > 100) {
+			$('#back-top').fadeIn(1000);
+		} else {
+			$("#back-top").fadeOut(1000);
+		}
+	});
 	var ran = function(){return Math.floor(Math.random()*(6-0)+0);}
 	$(document).ready(function(){
 	  $("#cbgp").click(function(){

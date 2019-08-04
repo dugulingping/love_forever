@@ -273,6 +273,9 @@ canvas {
 	background-color:rgba(240,76,131,0.8);
 	border-color: #F8F8F8;
 	color: #F8F8F8;
+	-webkit-transform: translateY(-7px) translateX(6px);
+	-moz-transform: translateY(-7px) translateX(6px);
+	transform: translateY(-7px) translateX(6px);
 }
 .section .heart{
 	font-size: 100px;
@@ -362,10 +365,14 @@ canvas {
 /*2*/
 #section2{
 	text-align: center;
+	background-color: #F8F8F8;
+}
+#section2 p{
+	margin: 10px 0;
 }
 /*3*/
 #section3{
-	background-image:url(images/s3_bg.jpg);
+	background-image:url(images/s3_bg1.jpg);
 	background-position:center;
 	background-attachment:fixed;
 	background-repeat:no-repeat;
@@ -375,7 +382,6 @@ canvas {
 #section3 h2{
 	letter-spacing: 10px;
 }
-
 /*4*/
 #section4{
 	background-color:#FAF8F8;
@@ -445,4 +451,9 @@ canvas {
 	background: none;
 	color: #f04c83;
 	font-size: -webkit-xxx-large;
+}
+#back-top:hover{
+	-webkit-transform: translateY(0) translateX(0);
+	-moz-transform: translateY(0) translateX(0);
+	transform: translateY(0) translateX(0);
 }

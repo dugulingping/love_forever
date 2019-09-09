@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width initial-scale=0.55" />
+	<title>我真的好爱好爱好爱你</title>
+	<link rel="stylesheet" href="./lib/layui/css/layui.css">
+	<link href="https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/font-awesome/5.10.0-12/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="shortcut icon" href="./favicon.ico">
+</head>
+<body>
+	<div id="loader-wrapper">
+		<div class="background"></div>
+			<canvas id="pinkboard"></canvas>
+			<div class="load_title">我可能会爱死我的宝宝啦<br><span>Forever</span></div>
+	</div>
+    <div id="menu" class="menu_animation menu_open" data-mark="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div id="navgation" class="navgation navgation_close">
+        <ul class="point">
+            <li><a href="#section1">爱情计时</a></li>
+            <li><a href="#section2">爱情轨迹</a></li>
+            <li><a href="#section3">爱的更多</a></li>
+        </ul>
+        <div class="logo"><a>爱你啊~</a></div>
+    </div>
+    <div class="section" id="section1">
+        <div class="fp-tablecell">
+            <div class="page1">
+                <div id="index_animated1" class="nav">
+                	<h2 id="p1_title">I  LOVE  YOU</h2>
+					<span class="heart fa fa-heart animated pulse infinite"></span>
+                    <h1 id="timeout"></h1>
+                    <p id="p1_connet">先送你一颗小心心，再送你一朵小花花，最后再送给你一个小可爱，那就是我</p>
+                    <button id="xjx" class="layui-btn layui-btn-primary layui-btn-radius">戳这里小惊喜</button>
+                    <button id="cbgp" class="layui-btn layui-btn-primary layui-btn-radius">Change BGP</button>
+                    <button id="x" class="layui-btn layui-btn-primary layui-btn-radius">显示小心心~</button>
+                </div>
+                <a class="next" data-wow-duration="2s" id="next"></a>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section2">
+        <div class="fp-tablecell">
+            <h2 class="wow fadedeInDown" data-wow-delay="0.5s" style="animation-name: fadeInDown">我们的爱情</h2>
+			<p class="wow fadeInDown" data-wow-delay="0.7s">这东西是为你准备的,虽是七夕的小礼物,但是我喜欢你是永恒的~</p>
+			<div class="timeline">
+				<ul>
+				<li class="wow fadedeInRight" data-wow-delay="0.5s" style="animation-name: fadeInRight">
+				<div class="badge"><i class="fa fa-heart"></i></div>
+				<div class="timeline-content">
+				<p class="timeline-title">认识你</p>
+				<span>2019年05月06日</span>
+				<p>当我走过心情低谷遇见你<br>不可思议十三亿分之一<br>真的很高兴认识你<br>真的好幸运能遇到你~ <br>感谢SoulAPP~ <br>能让我遇到这么好的你~</p>
+				</div>
+				</li>
+				<li class="wow fadedeInLeft" data-wow-delay="0.5s" style="animation-name: fadeInLeft">
+				<div class="badge"><i class="fa fa-heart"></i></div>
+				<div class="timeline-content">
+				<p class="timeline-title">在一起</p>
+				<span>2019年06月06日</span>
+				<p>我问你“你为啥会喜欢我？”<br>你回答说“因为是你啊~”<br>太可爱了叭~</p>
+				</div>
+				</li>
+				<li class="wow fadedeInRight" data-wow-delay="0.5s" style="animation-name: fadeInRight">
+				<div class="badge"><i class="fa fa-heart"></i></div>
+				<div class="timeline-content">
+				<p class="timeline-title">60天啦</p>
+				<span>2019年07月05日</span>
+				<p>嘿嘿嘿我的野心可是很大的~<br>想要每天早上第一眼就看到你啊~<br>要每天等你下班做上一桌子好吃的等你回家吖~<br>要每天晚上睡觉前凑到你身边要一个香香甜甜的亲亲呀~</p>
+				</div>
+				</li>
+				<li class="wow fadedeInLeft" data-wow-delay="0.5s" style="animation-name: fadeInLeft">
+				<div class="badge"><i class="fa fa-heart"></i></div>
+				<div class="timeline-content">
+				<p class="timeline-title">现在</p>
+				<span>2019年08月07日</span>
+				<p>想你，想你<br>就是想你~<br>想死你啦~<br>闭上眼睛~脑袋里面都是你啊</p>
+				</div>
+				</li>
+				<div style="clear: both;"></div>
+				</ul>
+			</div>
+        </div>
+    </div>
+    <div class="section" id="section3">
+		<div class="fp-tablecell">
+			<h2 class="wow fadedeInDown" data-wow-delay="0.5s" style="animation-name: fadeInDown">发现更多</h2>
+			<button class="layui-btn layui-btn-primary layui-btn-radius wow fadeInUp" data-wow-delay="0.7s" οnclick="javascrtpt:window.location.href='#'">正在开发</button>
+			<button class="layui-btn layui-btn-primary layui-btn-radius wow fadeInUp" data-wow-delay="0.7s" οnclick="javascrtpt:window.location.href='#'">正在开发</button>
+			<button class="layui-btn layui-btn-primary layui-btn-radius wow fadeInUp" data-wow-delay="0.7s">尽情期待吖~</button>
+		</div>
+    </div>
+    <div class="section" id="section4">
+        <div class="fp-tablecell">
+			<div class="separat"></div>
+			<p class="wow fadedeInDown" data-wow-delay="0.5s" style="animation-name: fadeInDown">虽然这个页面到这里就已经基本结束了~但是我们的爱情还会继续吖~</p>
+			<p class="wow fadedeInDown" data-wow-delay="0.5s" style="animation-name: fadeInDown">我最幸福的事情~大概就是在喜欢你的每一天里，被你喜欢吖~</p>
+			<p class="wow fadedeInDown" data-wow-delay="0.5s" style="animation-name: fadeInDown">这个花了我10天做好的网页，不及我爱你的一百分之一</p>
+			<p class="wow fadedeInDown" data-wow-delay="0.5s" style="animation-name: fadeInDown">我只想要一个你，一颗心，一心一意对你好~</p>
+			<p class="wow fadedeInDown" data-wow-delay="0.5s" style="animation-name: fadeInDown">好喜欢好喜欢，好爱好爱你吖~</p>
+			<p class="wow fadedeInDown" data-wow-delay="0.5s" style="animation-name: fadeInDown">我的世界只有你懂~</p>
+			<p class="love">
+				<span class="loveu wow fadedeInLeft" data-wow-delay="0.5s" style="animation-name: fadeInLeft">我</span>
+				<span class="heart fa fa-heart animated pulse infinite"></span>
+				<span class="loveu wow fadedeInRight" data-wow-delay="0.5s" style="animation-name: fadeInRight">你</span>
+			</p>
+			<div class="separat end"></div>
+        </div>
+    </div>
+    <footer class="footer wow fadeInUp">
+	<div class="copyright">
+		<div class="layui-row">
+			<div class="layui-col-xs12 layui-col-sm12 layui-col-md12 text-center">
+				<p><a href="https://github.com/dugulingping/loveforever">此页面源码已经全部开源</a></p>
+				<p>独孤伶俜 © 2014-2019.</p>
+				<p> <a href="https://www.icyuyan.net">主页</a> | <a href="https://blog.icyuyan.net">博客</a> | <a href="https://blog.icyuyan.net/about.html">关于</a> </p>
+			</div>
+		</div>
+	</div>
+</footer>
+<a id="back-top" href="#"><i class="fa fa-heart"></i></a>
+</body>
+<script src="./lib/layui/layui.js"></script>
+<script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js" type="text/javascript" charset="UTF-8"></script>
+<script src="./js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/hart.js" type="text/javascript" charset="UTF-8"></script>
+<script type="text/javascript">
+
+</script>
+</html>
